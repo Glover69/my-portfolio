@@ -20,6 +20,7 @@ export class Home {
 
   ngOnInit() {
     this.drawDiamondSVG()
+    this.lineAnimation()
     gsap.set('.second-text, .second-coming', { opacity: 0 });
     const split = new SplitText('.first-text', { type: 'words,chars' });
     console.log(split.chars);
@@ -86,5 +87,28 @@ export class Home {
       opacity: 1,
       ease: 'power2.out',
     })
+
+    gsap.fromTo(object[2], {
+      y: 20,
+      opacity: 0,
+    }, {
+      y: 0,
+      duration: 1,
+      opacity: 1,
+      ease: 'power2.out',
+    })
+  }
+
+
+  lineAnimation() {
+    gsap.fromTo('.lineOne', {
+      drawSVG: '0% 30%'
+    }, {
+      drawSVG: '70% 100%',
+      duration: 2,
+      ease: 'power2.inOut',
+      repeat: -1,
+      yoyo: true
+    });
   }
 }
