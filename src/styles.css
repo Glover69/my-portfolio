@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+/*@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
+@media (max-width: 767px) {
+  *{
+    max-width: 100% !important;
+  }
+}
+
+
+html,
+body {
+  max-width: 100% !important;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /*font-family: "Fustat", sans-serif;*/
+  font-optical-sizing: auto;
+}
+
+.fustat-bold {
+           font-family: "Fustat", sans-serif;
+           font-optical-sizing: auto;
+           font-weight: 800;
+           font-style: normal;
+         }
+
+
+
+@theme {
+
+  /* COLORS */
+  --color-brand-primary: #1F68F0;
+
+  /* Gray Color Variants */
+  --color-gray-text: #818181;
+  --color-gray-border: #DADADA;
+
+  --color-black-text: #121212;
+
+
+
+  /* FONTS */
+  --font-sans: "Geist", "sans-serif";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* SHADOWS */
+  --shadow-xs: 0 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(16, 24, 40, 0.10), 0 1px 2px 0 rgba(16, 24, 40, 0.06);
+  --shadow-md: 0 4px 8px -2px rgba(16, 24, 40, 0.10), 0 2px 4px -2px rgba(16, 24, 40, 0.06);
+  --shadow-lg: 0 12px 16px -4px rgba(16, 24, 40, 0.08), 0 4px 6px -2px rgba(16, 24, 40, 0.03);
+  --shadow-xl: 0 20px 24px -4px rgba(16, 24, 40, 0.08), 0 8px 8px -4px rgba(16, 24, 40, 0.03);
+  --shadow-2xl: 0 24px 48px -12px rgba(16, 24, 40, 0.18);
+  --shadow-3xl: 0 32px 64px -12px rgba(16, 24, 40, 0.14);
+
+  /* SCREEN BREAKPOINTS */
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1650px;
+
+}
+
+
+
