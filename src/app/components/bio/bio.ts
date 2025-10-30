@@ -13,8 +13,6 @@ gsap.registerPlugin(ScrollTrigger);
   styleUrl: './bio.css',
 })
 export class Bio implements AfterViewInit {
-
-
   ngAfterViewInit() {
     const split = new SplitText('.scroll-text', { type: 'words,chars' });
 
@@ -29,7 +27,8 @@ export class Bio implements AfterViewInit {
         start: 'top 80%', // When top of text hits 80% of viewport
         end: 'bottom 20%', // When bottom of text hits 20% of viewport
         scrub: 1, // Smooth scrubbing animation tied to scroll
-        // markers: true // Remove this after testing
+        invalidateOnRefresh: true, // Add this
+        anticipatePin: 1,
       }
     });
   }
